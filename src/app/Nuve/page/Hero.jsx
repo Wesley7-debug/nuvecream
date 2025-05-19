@@ -3,7 +3,7 @@
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Image from "next/image";
-import { forwardRef, useEffect, useRef } from "react";
+import {  useEffect, useRef } from "react";
 
 
 const Hero = () => {
@@ -116,7 +116,6 @@ mm.add("(max-width: 900px)",()=>{
     start:"top 60%",
     end:"+=5%",
     scrub:1,
-    markers:true,
    } })
   almostTl.current = gsap.timeline({
     scrollTrigger:{
